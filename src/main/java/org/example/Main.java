@@ -19,7 +19,7 @@ public class Main {
 
     @GetMapping("/newyear")
     public String daysUntilNewYear(Model model) {
-        System.out.println("Calculating days to New Year..."); //Debug line
+        System.out.println("Calculating days to New Year...."); //Debug line
         DateTime now = new DateTime();
         DateTime newYear = new DateTime(now.getYear() + 1, 1, 1, 0, 0);
         int daysUntilNewYear = Days.daysBetween(now, newYear).getDays();

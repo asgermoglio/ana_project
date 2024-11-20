@@ -33,6 +33,7 @@ pipeline {
                 sh 'mvn compiler:compile'
             }
         }
+
         stage ('Exec') {
             steps {
                 sh 'mvn spring-boot:run'
