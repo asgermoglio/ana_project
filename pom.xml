@@ -74,7 +74,21 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <achive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>org.example.Main</mainClass>
+                        </manifest>
+                    </achive>
+                </configuration>
+            </plugin>
         </plugins>
+
+        <finalName>${project.artifactId}</finalName>
 
     </build>
 
